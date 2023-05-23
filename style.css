@@ -12,6 +12,7 @@ h1{
 
 h1 span{
 	font-family: 'Foldit', cursive;
+	color: unset;
 }
 
 input{
@@ -23,67 +24,20 @@ input{
 	-webkit-box-reflect: below 10px linear-gradient(transparent,transparent,#0002);
 }
 a{
-	position: relative;
-	background: #fff;
-	color: #fff;
 	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 1.5em;
-	letter-spacing: 0.1 em;
-	font-weight: 400;
-	padding: 10px 30px;
+	width: 100px;
+	height: 20px;
+	padding-top: 10px;
+	background-color: #222;
+	text-align: center;
+	border-style: solid;
+	border-color: #673ab7;
 	transition: 0.5s;
+	color: #673ab7;
 }
 a:hover{
-	background: #673ab7;
-	color: #673ab7;
-	letter-spacing: 0.25em;
-	box-shadow: 0 0 35px #673ab7;
-}
-a:before{
-	content: "";
-	position: absolute;
-	inset: 2px;
-	background: #222;
-}
-a span{
-	position: relative;
-	z-index: 1;
-}
-a i{
-	position: absolute;
-	inset: 0;
-	display: block;
-}
-a i:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 80%;
-	width: 10px;
-	height: 4px;
-	background: #222;
-	transform: translateX(-50%) skewX(325deg);
-	transition: 0.5s;
-}
-a:hover i:before{
-	width: 20px;
-	left: 20%;
-}
-a i:after{
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 20%;
-	width: 10px;
-	height: 4px;
-	background: #222;
-	transform: translateX(-50%) skewX(325deg);
-	transition: 0.5s;
-}
-a:hover i:after{
-	width: 20px;
-	left: 80%;
+	background-color: #673ab7;
+	color: black;
 }
 .search_div{
 	display: flex;
